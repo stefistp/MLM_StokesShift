@@ -1,2 +1,2 @@
 # MLM_StokesShift
-ML models for Stokes-shift prediction with random/grouped split benchmarking, SHAP interpretability, and applicability domain analysis.
+This repository contains code for training and evaluating five supervised ML models (Ridge, Lasso, Random Forest, XGBoost, LightGBM) to predict the Stokes shift of solvated organic chromophores from combined chromophore and solvent descriptors. Models are benchmarked under random and chromophore-wise (grouped) splits to assess extrapolation on the Deep4Chem database, validated on an independent external dataset, juetal, and interpreted using SHAP. A distance-based applicability domain (AD) analysis quantifies the descriptor-space region within which predictions meet target accuracy.
