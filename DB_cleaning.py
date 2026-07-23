@@ -1,6 +1,6 @@
 import pandas as pd
 
-deep4chem = pd.read_csv('deep4chem.csv')
+deep4chem = pd.read_csv('datasetname.csv')
 
 required_columns = [
     'Chromophore',
@@ -21,4 +21,4 @@ all_columns = required_columns + ['Stokes Shift (nm)']
 deep4chem_processed = deep4chem_processed.dropna(subset=all_columns)
 deep4chem_processed = deep4chem_processed[deep4chem_processed['Stokes Shift (nm)'] > 0]
 
-deep4chem_processed.to_csv('deep4chem_processed.csv', index=False)
+deep4chem_processed.to_csv('datasetname_processed.csv', index=False)
